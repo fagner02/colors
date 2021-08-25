@@ -1,3 +1,15 @@
+* {
+  font-family: roboto;
+  color: white;
+}
+kbd {
+  font-family: Courier New;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 100%);
+  background: hsla(0, 0%, 100%, 0.2);
+  color: hsl(0,0%,100%);
+  padding: 0 5px 0 5px;
+}
 .post {
   display: flex;
   margin: 50px 0 10px ;
@@ -11,23 +23,17 @@
 }
 .tex {
   display: flex;
-  
   position: absolute;
   width: 70%;
   padding: 0px 20px 0 20px;
   border: 1px solid black;
   border-radius: 5px;
 }
-.tu {
-  //padding: 0px;
-}
 .body {
   display: flex;
   height: 5%;
   margin: 0 0 0px;
-  //width: 100%;
   align-item: center;
-  //align-content: center;
   padding: 0 0 0 0%;
   justify-content: center;
 }
@@ -37,40 +43,30 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  //background: lightgreen;
 }
 .menu {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  //width: 100%;
   margin: 0px;
   height: 50px;
-  //background: lightblue;
 }
 .scaff {
   display: list-item;
-  // flex-direction: column;
-  //align-content: center;
   margin: 0px;
   position: absolute;
   width: 100%;
   align-items: center;
   justify-content: center;
   height: 100%;
-  
-  //background: linear-gradient(to bottom right, red, yellow);
-  background-image: pink;
-  //background-image: linear-gradient(to right, blue, lightblue); //white;
+  background: hsl(200, 50%, 50%);
 }
 .text {
-  //display: flex;
   align-items: center;
   justify-content: center;
   flex: 2;
   margin: 0 0px 0 0;
-  //position: relative;
 }
 .title {
   display: flex;
@@ -78,8 +74,6 @@
   justify-content: start;
 }
 .heart {
-  //display: flex;
-  //position: relative;
   margin: 0 0 0 10px;
   height: 16pt;
   width: 10pt;
@@ -106,18 +100,13 @@
   top: 4px;*/
 }
 .date {
-  color: #4f94d4;
+  color: hsl(205, 80%, 60%);
   font-weight: bold;
   text-transform: uppercase;
-  font-family: roboto;
-  //border-left: 5px solid grey;
 }
 .brand {
   display: flex;
   padding: 40px 0 0 20px;
-  //width: 100%;
-  //top: 100px;
-  
   margin: -24px 0 -24px 0;
 }
 .footer {
@@ -126,14 +115,6 @@
   position: absolute;
   width: 100%;
   bottom: 0px;
-}
-#t {
-  color: white;
-  font-family: "roboto";
-}
-.s {
-  padding-left: 50px;
-  valign: Top;
 }
 .box1 {
   display: flex;
@@ -145,41 +126,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //width: 2%;
   height: 2%;
-  //background: black;
-  //border: 2px solid black;
   padding: 0 0 10px;
   margin: 0 0 0px;
 }
 @keyframes moveup {
   0% {top: -10px;}
- // 50% {top: -10px;}
   100% {top: 10px;}
-}
-@keyframes movedown {
-  0% {
-    top: 0px;
-    left: 0px;
-    transform: rotate(0deg) scale(1, 1);
-  }
-  100% {
-    top: 225px;
-    left: 293px;
-    transform: rotate(90deg) scale(1.5,1.5);
-  }
-}
-@keyframes md {
-  0% {
-    top: 170px;
-    left: 293px;
-    transform: rotate(90deg) scale(1.5,1.5);
-  }
-  100% {
-    top: 0px;
-    left: 0px;
-    transform: rotate(0deg) scale(1, 1);
-  }
 }
 @keyframes bounce{
   0% {
@@ -241,25 +194,15 @@
   justify-content: center;
   padding: 0 15% 0 15%;
   height: 150px;
-  //background: lightgreen;
 }
 .box4 {
   display: flex;
-  //flex-direction: column;
   justify-content: center;
   align-items: center;
-  //height: 300px;
- // width: 100%;
 }
 .view {
   display: flex;
   z-index: 1;
-  //flex-shrink: 0;
- // flex-direction: row;
-  /*animation: translate 1.5s alternate;
-  animation-iteration-count: 3;*/
-  
-  //animation-delay: 3s;
   justify-content: center;
   align-items: center;
   width: 300px;
@@ -269,28 +212,18 @@
 .view1 {
   display: flex;
   z-index: 1;
- // flex-shrink: 0;
- // flex-direction: row;
-  //animation: translate2 2s alternate;
-  //animation-iteration-count: 3;
-  
-  //animation-delay: 3s;
   justify-content: center;
   align-items: center;
   width: 700px;
-  //height: 300px;
   height: 0px;
-  //overflow: hidden;
 }
 @keyframes translate {
   from {
-   // transform: translateX(350px);
     border-radius: 100%;
     width: 0;
     height: 0;
   }
   to{
-    //transform: translateX(0px);
     border-radius: 0%;
     width: 300px;
     height: 300px;
@@ -357,6 +290,14 @@
     transform: scale(1.2,1.2);
   }
 }
+@keyframes rSelect {
+  from{
+    transform: scale(1.2,1.2);
+  }
+  to{
+    transform: scale(1,1);
+  }
+}
 .fill {
   position: relative;
   background: white;
@@ -364,14 +305,12 @@
   border-radius: 10%;
   width: 90%;
   height: 90%;
-  //box-shadow: 10px 20px black;
 }
 .fill1 {
   position: relative;
   border: 1px solid white;
   box-shadow: 0 0 20px white;
   border-radius: 100%;
-  //left: 50px;
   margin-left: -50px;
   margin-right: -50px;
   /*
@@ -404,49 +343,27 @@
   width: 0px;
   height: 0px;
 }
-.aniFill {
-  animation: slide2 2s alternate;
-  //animation-iteration-count: 3;
-  //animation-delay: 2s;
-}
 .selection {
   display: flex;
   flex-shrink: 0;
- // overflow: scroll;
   justify-content: center;
   align-items: center;
-  
-  //animation: translate2 1s;
   position: relative;
   border-radius: 50%;
   border: 1px solid white;
   width: 250px;
   height: 250px;
   box-shadow: 0 0 20px white;
-  
- // background: rgba(255,255,255, 0.5);
 }
 .selection1 {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  //position: relative;
   background: rgba(255,255,255,0.5);
- // border: 1px solid white;
- // box-shadow: 0 0 20px white;
   border-radius: 10px;
-  //width: 600px;
   width: 0px;
   height: 120px;
-  
-  //animation: translate2 2s alternate;
-  //animation-iteration-count: 3;
-}
-.width {
-  width: 0px;
-  height: 0;
-  visibility: hidden;
 }
 .icon {
   margin: 0px 0 0 0;
@@ -465,8 +382,21 @@
   border-radius: 5px;
   color: white;  
 }
-.back {
-  background: lighgreen;
+.gButton {
+  border-radius: 5px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.0);
+  padding: 11px 20px 11px 20px;
+  font-size: 20px;    
+  margin: 10px;
+}
+.sButton {
+  border-radius: 5px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.0);
+  padding: 11px 20px 11px 20px;
+  font-size: 20px;
+  margin: 10px;
 }
 #quote {
   font-family: roboto;
