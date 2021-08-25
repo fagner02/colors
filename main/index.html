@@ -7,13 +7,10 @@
   </title> 
  </head> 
  <body style="margin: 0px"> 
-  <link rel="stylesheet" type="text/css" href="blog.css"> 
+  <link rel="stylesheet" type="text/css" href="main.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   <script src="https://unpkg.com/jquerykeyframes@1.0.8/dist/jquery.keyframes.min.js"></script> 
   <div class="scaff"> 
-   <!--<div class="menu"> 
-   <h1 id="t"> BrandName </h1> 
-  </div> --> 
    <div id="t" class="brand back"> 
     <h1> BrandName </h1> 
     <img class="icon" height="80px" src="/storage/emulated/0/sketch-1600715230194.png"> 
@@ -28,8 +25,10 @@
       <div class="date">
         Apuiarés, 17.07.2021 
       </div> 
-      <p id="t"> This is an example text </p> 
-      <p id="quote"> This is an html example from Dcoder, <br> have fun :) </p> 
+      <p id="t"><kbd>Tag</kbd> This is an example text </p> 
+      <p></p> 
+      <p id="quote"> Lorem ipsum dolor sit amet, <br> 
+         consectetur adipiscing </p> 
      </div> 
      <div class="box1"> 
       <button class="b" onclick="borderColor(getRandomColor());
@@ -43,7 +42,7 @@
    </div> 
    <div class="body back"> 
     <div class="tex border"> 
-     <p id="t">This is an example paragraph with a description of an startup project, info about the new project are precisely described in this text</p> 
+     <p id="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue, urna laoreet vehicula ullamcorper, mauris libero lobortis nibh, vel congue arcu justo vitae lacus.</p> 
     </div> 
    </div> 
    <div class="box3 back"> 
@@ -72,11 +71,11 @@
     </div> 
    </div> 
    <div class="box4"> 
-    <button onclick="gradient()">Gradient</button> 
-    <button onclick="solid()">Solid</button> 
+    <button class="gButton" onclick="toGradient()">gradient</button> 
+    <button class="sButton" onclick="toSolid()">solid</button> 
    </div> 
    <div class="footer"></div> 
-   <script type="text/javascript" href="blog.js">
+   <script src="main.js">
   </script> 
   </div> 
  </body>
