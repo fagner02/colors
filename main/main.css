@@ -2,6 +2,10 @@
   font-family: roboto;
   color: white;
 }
+html, body{
+  height: 100%;
+  margin: 0;
+}
 kbd {
   font-family: Courier New;
   border-radius: 5px;
