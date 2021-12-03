@@ -115,13 +115,7 @@ kbd {
   padding: 40px 0 0 20px;
   margin: -24px 0 -24px 0;
 }
-.footer {
-  height: 20px;
-  background-color: black;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-}
+
 .box1 {
   display: flex;
   flex: 1;
