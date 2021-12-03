@@ -63,8 +63,9 @@ kbd {
   width: 100%;
   align-items: center;
   justify-content: center;
-  /*height: 100%;*/
-  background: hsl(200, 50%, 50%);
+  /*height: 100%;
+  background: hsl(200, 50%, 50%);*/
+  background-image: linear-gradient(red, yellow);
 }
 .text {
   align-items: center;
