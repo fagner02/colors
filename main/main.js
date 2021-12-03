@@ -1,6 +1,6 @@
 window.onload = function (){
-  //test();
-  //setColor();
+  test();
+  setColor();
   bounce();
 };
 
