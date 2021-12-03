@@ -66,6 +66,7 @@ kbd {
   /*height: 100%;
   background: hsl(200, 50%, 50%);*/
   background-image: linear-gradient(red, yellow);
+  background-size: cover;
 }
 .text {
   align-items: center;
