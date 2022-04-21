@@ -2,21 +2,25 @@
   font-family: roboto;
   color: white;
 }
-html, body{
+
+html,
+body {
   height: 100%;
   margin: 0;
 }
+
 kbd {
   font-family: Courier New;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 100%);
   background: hsla(0, 0%, 100%, 0.2);
-  color: hsl(0,0%,100%);
+  color: hsl(0, 0%, 100%);
   padding: 0 5px 0 5px;
 }
+
 .post {
   display: flex;
-  margin: 50px 0 10px ;
+  margin: 50px 0 10px;
   width: 70%;
   align-items: center;
   justify-content: start;
@@ -25,6 +29,7 @@ kbd {
   border-radius: 5px;
   padding: 0 20px 5px 20px;
 }
+
 .tex {
   display: flex;
   position: absolute;
@@ -33,21 +38,23 @@ kbd {
   border: 1px solid black;
   border-radius: 5px;
 }
+
 .body {
   display: flex;
   height: 5%;
-  margin: 0 0 0px;
-  align-item: center;
-  padding: 0 0 0 0%;
+  margin: 0;
+  padding: 0;
   justify-content: center;
 }
+
 .card {
-  margin: 0 0 0px 0px;
+  margin: 0;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
+
 .menu {
   display: flex;
   width: 100%;
@@ -56,38 +63,40 @@ kbd {
   margin: 0px;
   height: 50px;
 }
+
 .scaff {
   display: list-item;
   margin: 0px;
   position: absolute;
   width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  /*height: 100%;
-  background: hsl(200, 50%, 50%);*/
   background-image: linear-gradient(red, yellow);
-  background-attachment: fixed;
-  background-size: cover;
 }
+
 .text {
   align-items: center;
   justify-content: center;
   flex: 2;
-  margin: 0 0px 0 0;
+  margin: 0;
 }
+
 .title {
   display: flex;
   align-items: center;
   justify-content: start;
 }
+
 .heart {
-  margin: 0 0 0 10px;
+  margin-left: 10px;
   height: 16pt;
   width: 10pt;
   background: pink;
   border-radius: 200px 200px 0 0;
   transform: rotate(45deg);
 }
+
 .heart::before {
   content: "";
   position: absolute;
@@ -95,22 +104,15 @@ kbd {
   width: 10pt;
   background: #4fc1e9;
   border-radius: 100px 100px 0 0;
-  transform: rotate(-90deg) 
-  translate(-4.24px, -4px);
-  /*
-    equation:
-    h^2=((height-width)^2)*2
-    h-5.4%
-  */
-    
-  /*left: -4px;
-  top: 4px;*/
+  transform: rotate(-90deg) translate(-4.24px, -4px);
 }
+
 .date {
   color: hsl(205, 80%, 60%);
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .brand {
   display: flex;
   padding: 40px 0 0 20px;
@@ -123,6 +125,7 @@ kbd {
   align-items: center;
   justify-content: start;
 }
+
 .box2 {
   display: flex;
   align-items: center;
@@ -131,37 +134,34 @@ kbd {
   padding: 0 0 10px;
   margin: 0 0 0px;
 }
+
 @keyframes moveup {
-  0% {top: -10px;}
-  100% {top: 10px;}
-}
-@keyframes bounce{
   0% {
-    transform: rotate(0deg) 
-    translateY(0px)
-    translateX(0px);
-  }
-  25% {
-    transform: rotate(10deg) 
-    translateY(-2px)
-    translateX(2px);
-  }
-  50% {
-    transform: rotate(5deg) 
-    translateY(-1px)
-    translateX(1px);
-  }
-  75% {
-    transform: rotate(10deg) 
-    translateY(-2px)
-    translateX(2px);
+    top: -10px;
   }
   100% {
-    transform: rotate(0deg) 
-    translateY(0px)
-    translateX(0px);
+    top: 10px;
   }
 }
+
+@keyframes bounce {
+  0% {
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: rotate(10deg) translateY(-2px) translateX(2px);
+  }
+  50% {
+    transform: rotate(5deg) translateY(-1px) translateX(1px);
+  }
+  75% {
+    transform: rotate(10deg) translateY(-2px) translateX(2px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px) translateX(0px);
+  }
+}
+
 .square {
   position: relative;
   width: 10px;
@@ -175,18 +175,20 @@ kbd {
   animation-timing-function: linear;
   animation-fill-mode: none;
 }
+
 .square1 {
   position: relative;
   z-index: 2;
   width: 100px;
   height: 100px;
-  box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
   top: 0px;
   background: red;
-}  
+}
+
 .box3 {
   display: flex;
   z-index: 1;
@@ -196,11 +198,13 @@ kbd {
   padding: 0 15% 0 15%;
   height: 150px;
 }
+
 .box4 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .view {
   display: flex;
   z-index: 1;
@@ -210,6 +214,7 @@ kbd {
   height: 300px;
   overflow: hidden;
 }
+
 .view1 {
   display: flex;
   z-index: 1;
@@ -218,54 +223,59 @@ kbd {
   width: 700px;
   height: 0px;
 }
+
 @keyframes translate {
   from {
     border-radius: 100%;
     width: 0;
     height: 0;
   }
-  to{
+  to {
     border-radius: 0%;
     width: 300px;
     height: 300px;
   }
 }
+
 @keyframes translate2 {
-  0%{
+  0% {
     width: 0px;
   }
-  100%{
+  100% {
     width: 600px;
   }
 }
+
 @keyframes slide2 {
-  0%{
+  0% {
     visibility: hidden;
     right: 125px;
     width: 0;
     height: 0;
   }
-  100%{
+  100% {
     visibility: visible;
     right: 0;
     width: 250px;
     height: 250px;
   }
 }
+
 @keyframes slide3 {
-  0%{
+  0% {
     visibility: hidden;
     left: 125px;
     width: 0;
     height: 0;
   }
-  100%{
+  100% {
     visibility: visible;
     left: 0;
     width: 250px;
     height: 250px;
   }
 }
+
 @keyframes shrink {
   from {
     height: 300px;
@@ -274,31 +284,34 @@ kbd {
     height: 0px;
   }
 }
+
 @keyframes bubble {
   0% {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
   25% {
-    transform: scale(1.4,1.4);
+    transform: scale(1.4, 1.4);
   }
   50% {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
   }
   75% {
-    transform: scale(1.3,1.3);
+    transform: scale(1.3, 1.3);
   }
   100% {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
   }
 }
+
 @keyframes rSelect {
-  from{
-    transform: scale(1.2,1.2);
+  from {
+    transform: scale(1.2, 1.2);
   }
-  to{
-    transform: scale(1,1);
+  to {
+    transform: scale(1, 1);
   }
 }
+
 .fill {
   position: relative;
   background: white;
@@ -307,6 +320,7 @@ kbd {
   width: 90%;
   height: 90%;
 }
+
 .fill1 {
   position: relative;
   border: 1px solid white;
@@ -314,17 +328,12 @@ kbd {
   border-radius: 100%;
   margin-left: -50px;
   margin-right: -50px;
-  /*
-  right: 0
-  visibility: visible;
-  width: 250px;
-  height: 250px;
-  */
   right: 125px;
   visibility: hidden;
   width: 0px;
   height: 0px;
 }
+
 .fill2 {
   display: flex;
   position: relative;
@@ -333,17 +342,12 @@ kbd {
   border-radius: 100%;
   margin-left: -50px;
   margin-right: -50px;
-  /*
-  left: 0px;
-  visibility: visible;
-  width: 250px;
-  height: 250px;
-  */
   left: 125px;
   visibility: hidden;
   width: 0px;
   height: 0px;
 }
+
 .selection {
   display: flex;
   flex-shrink: 0;
@@ -356,22 +360,25 @@ kbd {
   height: 250px;
   box-shadow: 0 0 20px white;
 }
+
 .selection1 {
   display: flex;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   width: 0px;
   height: 120px;
 }
+
 .icon {
   margin: 0px 0 0 0;
   position: relative;
   top: -15px;
   left: -5px;
 }
+
 .b {
   height: 50px;
   width: 90px;
@@ -381,24 +388,27 @@ kbd {
   font-weight: bold;
   font-size: 20px;
   border-radius: 5px;
-  color: white;  
+  color: white;
 }
+
 .gButton {
   border-radius: 5px;
   border: 1px solid white;
-  background: rgba(255, 255, 255, 0.0);
-  padding: 11px 20px 11px 20px;
-  font-size: 20px;    
-  margin: 10px;
-}
-.sButton {
-  border-radius: 5px;
-  border: 1px solid white;
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(255, 255, 255, 0);
   padding: 11px 20px 11px 20px;
   font-size: 20px;
   margin: 10px;
 }
+
+.sButton {
+  border-radius: 5px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0);
+  padding: 11px 20px 11px 20px;
+  font-size: 20px;
+  margin: 10px;
+}
+
 #quote {
   font-family: roboto;
   padding-left: 5px;
