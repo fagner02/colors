@@ -1,0 +1,109 @@
+.selectors {
+  display: grid;
+  grid-template-areas: "unit";
+  justify-content: stretch;
+  height: 300px;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.solid-selector,
+.gradient-selector {
+  display: grid;
+  place-items: center;
+  transition: opacity 0.5s;
+  grid-template-areas: "unit";
+  width: -webkit-fill-available;
+}
+
+.gradient-selector {
+  --circle-size: calc(min(80dvw, 500px) / 2);
+  display: none;
+  opacity: 0;
+}
+
+.circle {
+  grid-area: unit;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 20px white;
+  transition: width 0.5s, height 0.5s, left 0.5s;
+}
+
+.white-square {
+  grid-area: unit;
+  position: relative;
+  background: white;
+  opacity: 50%;
+  border-radius: 20px;
+}
+
+.gradient-selector > .circle {
+  width: 0px;
+  height: 0px;
+  grid-area: unit;
+}
+
+.gradient-selector > .circle:nth-child(2) {
+  left: 0px;
+}
+
+.gradient-selector > .circle:nth-child(3) {
+  left: 0px;
+}
+
+.gradient-selector > .white-square {
+  grid-area: unit;
+  width: 0px;
+  height: min(calc(var(--circle-size) * 0.6), 130px);
+  grid-area: unit;
+  transition: all 0.5s 0.15s;
+}
+
+.gradient-selector.selected > .circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  --circle-offset: calc(var(--circle-size) * 0.3);
+  left: var(--circle-offset);
+}
+
+.gradient-selector.selected > .circle:nth-child(3) {
+  left: calc(var(--circle-offset) * -1);
+}
+
+.gradient-selector.selected > .white-square {
+  transition: all 0.5s 0.2s;
+  width: min(80dvw, 500px);
+}
+
+.solid-selector {
+  --square-size: min(70dvw, 250px);
+  --circle-size: calc(var(--square-size) * 1.1);
+}
+
+.solid-selector.selected > .circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+}
+
+.solid-selector > .circle {
+  width: 0dvw;
+  height: 0dvw;
+}
+
+.solid-selector.selected > .white-square {
+  width: var(--square-size);
+  height: var(--square-size);
+  transition: all 0.5s;
+}
+
+.solid-selector > .white-square {
+  width: 0dvw;
+  height: 0dvw;
+  transition: all 0.5s;
+}

@@ -146,51 +146,6 @@ function toggleSection() {
     button.style.rotate = "225deg";
   }
 }
-/*================[CLEAR]==================*/
-// function clear() {
-//   gsq.forEach(function (x, key) {
-//     if (x >= 0) {
-//       ani(x, true);
-//     }
-//     setTimeout(function () {
-//       gsq.set(key, -1);
-//     }, 500);
-//   });
-//   if (selectedSquare) {
-//     ani(selectedSquare, true);
-//     setTimeout(function () {
-//       selectedSquare = null;
-//     }, 500);
-//   }
-
-//   selected = null;
-// }
-
-// function borderColor(color) {
-//   var borders = document.getElementsByClassName("border");
-//   for (var i = 0; i < borders.length; i++) {
-//     borders[i].style.borderColor = color;
-//   }
-//   document.getElementsByClassName("b")[0].style.backgroundColor = color;
-// }
-
-// function backColor(back) {
-//   if (typeof back == "object") {
-//     $(".scaff").css(back);
-//     return;
-//   }
-//   $(".scaff").css({
-//     backgroundImage: "",
-//     background: back,
-//   });
-// }
-
-// function setColor() {
-//   var v = $(".square1");
-//   for (var i = 0; i < v.length; i++) {
-//     v[i].style.backgroundColor = getRandomColor();
-//   }
-// }
 
 function getRandomColor() {
   var letters = "0123456789ABCDEF";

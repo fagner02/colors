@@ -2,93 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
     <title>Test</title>
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      defer
-    ></script>
+      defer></script>
     <script
       src="https://unpkg.com/jquerykeyframes@1.0.8/dist/jquery.keyframes.min.js"
-      defer
-    ></script>
+      defer></script>
     <script src="main.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="selectors.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
-  <body class="scaff">
-    <div id="t" class="brand back">
+  <body>
+    <header>
       <h1>BrandName</h1>
       <img class="icon" height="80px" src="BeeIcon.png" />
-    </div>
-    <div class="card back">
-      <div class="post border">
-        <div class="text">
-          <div class="title">
-            <h1 id="t">Hello</h1>
-            <div class="heart"></div>
+    </header>
+    <section id="first">
+      <section class="border-box">
+        <div id="presentation">
+          <div>
+            <div class="row">
+              <h1>Hello</h1>
+              <div class="heart"></div>
+            </div>
+            <p>Quixadá, <time>17.07.2021</time></p>
+            <p><mark>Tag</mark> This is an example text</p>
+            <blockquote>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing
+            </blockquote>
           </div>
-          <div class="date">Quixadá, 17.07.2021</div>
-          <p id="t"><kbd>Tag</kbd> This is an example text</p>
-          <p></p>
-          <p id="quote">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing
-          </p>
-        </div>
-        <div class="box1">
           <button
-            class="b"
-            onclick="borderColor(getRandomColor());
-        backColor(getRandomColor())"
-          >
+            id="color-button"
+            onclick="borderColor(getRandomColor()); backColor(getRandomColor())">
             color
           </button>
         </div>
-      </div>
-    </div>
-    <div class="box2 back">
-      <div class="square"></div>
-    </div>
-    <div class="body back">
-      <div class="tex border">
-        <p id="t">
+      </section>
+      <section class="border-box">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue,
           urna laoreet vehicula ullamcorper, mauris libero lobortis nibh, vel
           congue arcu justo vitae lacus.
         </p>
-      </div>
-    </div>
-    <div class="box3 back">
-      <div id="1" onclick="ani(id)" class="square1"></div>
-      <div id="2" onclick="ani(id)" class="square1"></div>
-      <div id="3" onclick="ani(id)" class="square1"></div>
-      <div id="4" onclick="ani(id)" class="square1"></div>
-      <div id="5" onclick="ani(id)" class="square1"></div>
-    </div>
-    <div class="box4">
-      <div class="view">
-        <div class="selection">
-          <div class="fill"></div>
+      </section>
+    </section>
+    <section>
+      <button id="animated-dot-button" onclick="toggleSection()">
+        <div id="animated-dot"></div>
+      </button>
+    </section>
+    <section id="second">
+      <section class="square-container">
+        <div id="s1" onclick="toggleSelected(1)" class="square"></div>
+        <div id="s2" onclick="toggleSelected(2)" class="square"></div>
+        <div id="s3" onclick="toggleSelected(3)" class="square"></div>
+        <div id="s4" onclick="toggleSelected(4)" class="square"></div>
+        <div id="s5" onclick="toggleSelected(5)" class="square"></div>
+      </section>
+      <section class="selectors">
+        <div class="solid-selector selected">
+          <div class="circle"></div>
+          <div class="white-square"></div>
         </div>
-      </div>
-    </div>
-    <div class="box4">
-      <div class="view1">
-        <div class="selection1">
-          <div class="fill1" onclick="select(0)"></div>
-          <div class="fill2" onclick="select(1)"></div>
+        <div class="gradient-selector">
+          <div class="white-square"></div>
+          <div class="circle" onclick="setGradient(1)"></div>
+          <div class="circle" onclick="setGradient(2)"></div>
         </div>
+      </section>
+      <div id="buttons">
+        <button onclick="openGradientSelector()">gradient</button>
+        <button onclick="openSolidSelector()">solid</button>
       </div>
-    </div>
-    <div class="box4">
-      <button class="gButton" onclick="toGradient()">gradient</button>
-      <button class="sButton" onclick="toSolid()">solid</button>
-    </div>
-    <div class="footer"></div>
+    </section>
+    <footer></footer>
   </body>
 </html>
